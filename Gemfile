@@ -43,3 +43,34 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem "pry"
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem "meta_request"
+end
+
+# User Interface
+gem "modernizr-rails"
+gem "compass-rails", "~> 2.0.alpha.0"
+gem "gumby-framework"
+
+# Authenticatiom system
+gem "devise", "~>3.0.2"
+gem 'devise_invitable', :github => 'scambra/devise_invitable'
+
+# Authorization system
+gem 'cancan'
+
+#Pagination system
+#gem "kaminari", :git => "http://github.com/amatsuda/kaminari.git", :branch => "rails4"
+
+#admin panel
+gem 'responders',          :github => 'plataformatec/responders'
+gem 'inherited_resources', :github => 'josevalim/inherited_resources'
+gem 'ransack' #,             :github => 'ernie/ransack', :branch => 'rails-4'
+gem 'activeadmin',         :github => 'gregbell/active_admin', :branch => 'rails4'
+
+gem "paperclip"
+gem "rb-readline"
