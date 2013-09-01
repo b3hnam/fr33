@@ -65,7 +65,7 @@ gem 'cancan'
 
 #Pagination system
 #gem "kaminari", :git => "http://github.com/amatsuda/kaminari.git", :branch => "rails4"
-
+1
 #admin panel
 gem 'responders',          :github => 'plataformatec/responders'
 gem 'inherited_resources', :github => 'josevalim/inherited_resources'
@@ -75,4 +75,6 @@ gem 'activeadmin',         :github => 'gregbell/active_admin', :branch => 'rails
 gem "paperclip"
 gem "rb-readline"
 
-# gem 'high_voltage'
+gem 'high_voltage'
+
+gem 'formtastic'
