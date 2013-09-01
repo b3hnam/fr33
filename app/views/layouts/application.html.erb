@@ -1,14 +1,67 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+
 <head>
-  <title>Fr33</title>
+  <meta charset="utf-8">
+
+  <title>FR33</title>
+  <meta name="description" content="Iranian free software users">
+  <meta name="keywords" content="free software open source Iran" />
+
+  <!-- Facebook Metadata /-->
+  <meta property="og:title" content="Personal website of b3hnam !"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="images/thumbnail.jpg"/>
+  <meta property="og:url" content="http://b3hnam.com"/>
+  <meta property="og:description" content=""/>
+
+  <!-- Google+ Metadata /-->
+  <meta itemprop="name" content="b3hnam.com">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="">
+
+  <!-- Facebook Metadata /-->
+  <meta name="twitter:card" content="summary">
+
+  <link rel="author" href="https://plus.google.com/109827519454759142474">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <%= stylesheet_link_tag    "print", media: "print", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
 
-</body>
+  <body>
+    <div class="navbar" >
+       <a class="toggle" gumby-trigger=".navbar > .row > #navigation > ul" href="#"><i class="icon-menu"></i></a>
+      <div class="row">
+	<div class="four columns">
+	  <h1 class="logo">FR33</h1>
+	</div>
+	<div id="navigation" class="eight columns" >
+
+	</div>
+      </div>
+    </div>
+
+    <section id="content">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </section>
+
+    <div class="footer">
+    </div>
+
+  </body>
 </html>

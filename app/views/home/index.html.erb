@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+
+    <% @news.each do |news| %>
+        <%= news.title %>
+        <%= news.body %>
+        <%= news.category_id %>
+        <%= news.user_id %>
+        <%= link_to 'Show', news %>
+      </tr>
+    <% end %>

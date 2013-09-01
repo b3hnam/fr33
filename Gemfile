@@ -74,3 +74,5 @@ gem 'activeadmin',         :github => 'gregbell/active_admin', :branch => 'rails
 
 gem "paperclip"
 gem "rb-readline"
+
+# gem 'high_voltage'

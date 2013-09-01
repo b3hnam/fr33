@@ -1,4 +1,8 @@
 Fr33::Application.routes.draw do
+  resources :categories
+
+  get "home/index"
+  devise_for :users
   resources :news
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -41,7 +45,7 @@ Fr33::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
@@ -55,4 +59,5 @@ Fr33::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root to: "home#index"
 end
